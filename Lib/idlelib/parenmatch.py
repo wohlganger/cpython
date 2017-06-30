@@ -41,10 +41,7 @@ class ParenMatch:
             'extensions','ParenMatch','flash-delay', type='int',default=500)
     BELL = idleConf.GetOption(
             'extensions','ParenMatch','bell', type='bool',default=1)
-    HILITE_CONFIG = idleConf.GetHighlight(
-        idleConf.CurrentTheme(), idleConf.GetOption(
-            'extensions','ParenMatch','hilite', default='expression'))
-
+    HILITE_CONFIG = idleConf.GetHighlight(idleConf.CurrentTheme(),'hilite')
 
     RESTORE_VIRTUAL_EVENT_NAME = "<<parenmatch-check-restore>>"
     # We want the restore event be called before the usual return and

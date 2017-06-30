@@ -73,7 +73,6 @@ format-paragraph=<Alt-Key-q>
 [ParenMatch]
 enable=True
 style= expression
-hilite=hilite
 flash-delay= 500
 bell=True
 [ParenMatch_cfgBindings]
